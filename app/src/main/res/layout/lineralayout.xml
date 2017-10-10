@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.administrator.myapplication.MainActivity">
+    tools:context="com.example.wxj.myapplication001.MainActivity01">
 
     <TextView
         android:layout_width="wrap_content"

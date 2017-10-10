@@ -11,39 +11,42 @@
     tools:context="com.example.wxj.myapplication001.MainActivity01">
 
     <TextView
-        android:id="@+id/tv_user_name"
+        android:id="@+id/tv_use_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User Name" />
+        android:text="use name" />
     <EditText
-        android:id="@+id/et_user_name"
+        android:id="@+id/et_use_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_user_name"/>
+        android:layout_below="@id/tv_use_name"/>
     <TextView
         android:id="@+id/tv_password"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password"
-        android:layout_below="@id/et_user_name"/>
+        android:text="password"
+        android:layout_below="@id/et_use_name"/>
     <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_password"/>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_below="@id/et_password">
+        android:layout_height="match_parent"
+        android:layout_below="@id/et_password"
+        android:gravity="center_horizontal">
         <Button
+            android:id="@+id/btn_dl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="登录"/>
+            android:text="登录" />
         <Button
+            android:id="@+id/btn_qx"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="取消"/>
-    </LinearLayout>
+            android:text="取消"
+            android:layout_toRightOf="@id/btn_dl"/>
+    </RelativeLayout>
+
 </RelativeLayout>
